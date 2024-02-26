@@ -18,7 +18,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 14
+    value: 15
   threshold:
     overrideState: 0
     value: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     value: 3.4
   anamorphicRatio:
     overrideState: 0
-    value: 0
+    value: 1
   color:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -93,10 +93,10 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 207
+    value: 279
   sampleCount:
     overrideState: 1
-    value: 13
+    value: 24
 --- !u!114 &-623805374697225109
 MonoBehaviour:
   m_ObjectHideFlags: 3
