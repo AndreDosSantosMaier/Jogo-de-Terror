@@ -12,8 +12,12 @@ public class CameraLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
+    // 999999999999999999999999999999999999999999999999999999999
     void Update()
+    {
+        look();
+    }
+    void look()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSense * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSense * Time.deltaTime;
@@ -23,6 +27,7 @@ public class CameraLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         player.Rotate(Vector3.up * mouseX);
-        
+
     }
+
 }

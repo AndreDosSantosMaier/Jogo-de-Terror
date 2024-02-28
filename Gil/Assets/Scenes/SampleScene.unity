@@ -813,7 +813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b7362cb1566e0e47b1701b1ebc087eb, type: 2}
+  - {fileID: 2100000, guid: 3adc3c6f273322f41822ee133a210d11, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -852,8 +852,8 @@ Transform:
   m_GameObject: {fileID: 586336591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.414483, y: -2.2612295, z: 3.6180973}
-  m_LocalScale: {x: 4.2565, y: 1, z: 4.286}
+  m_LocalPosition: {x: 11, y: -2.2612295, z: 3.6180973}
+  m_LocalScale: {x: 4.9914303, y: 1.1726608, z: 5.026024}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1345,6 +1345,7 @@ GameObject:
   - component: {fileID: 1559011878}
   - component: {fileID: 1559011879}
   - component: {fileID: 1559011880}
+  - component: {fileID: 1559011881}
   m_Layer: 0
   m_Name: playerPov
   m_TagString: Untagged
@@ -1439,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8148c1a6bc616b498726de414a74b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSense: 400
+  mouseSense: 250
   player: {fileID: 2102792465}
 --- !u!114 &1559011879
 MonoBehaviour:
@@ -1520,6 +1521,18 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1559011881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559011874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4099e99880a897548bb31a358c82c250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1588155615
 GameObject:
   m_ObjectHideFlags: 0
