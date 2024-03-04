@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class MoveScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -12,10 +14,18 @@ public class MoveScript : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded = false; 
+    public float crouchSpeed;
+    public float crouchYScale;
+    public float startYScale;
     Vector3 velocity;
+    public Rigidbody rb;
+
     void Start()
     {
         GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody>();
+        startYScale = transform.localScale.y;
+        
     }
 
     // Update is called once per frame
@@ -58,4 +68,5 @@ public class MoveScript : MonoBehaviour
             speed = 6f;
         }
     }
+ 
 }

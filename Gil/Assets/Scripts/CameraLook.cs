@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraLook : MonoBehaviour
@@ -7,12 +8,15 @@ public class CameraLook : MonoBehaviour
     public float mouseSense = 100f;
     public Transform player;
     float xRotation = 0f;
+    public GameObject child;
+    public Transform parent;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        child.transform.SetParent(parent);
     }
 
-    // 999999999999999999999999999999999999999999999999999999999
+    // 
     void Update()
     {
         look();
