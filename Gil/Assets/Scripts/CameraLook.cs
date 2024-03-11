@@ -8,12 +8,13 @@ public class CameraLook : MonoBehaviour
     public float mouseSense = 100f;
     public Transform player;
     float xRotation = 0f;
-    public GameObject child;
-    public Transform parent;
+    public Camera mCamera;
+ 
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        child.transform.SetParent(parent);
+        mCamera = Camera.main;
     }
 
     // 
